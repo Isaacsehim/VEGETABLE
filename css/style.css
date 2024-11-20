@@ -1,0 +1,25 @@
+body {
+	padding-top: 5rem;
+}
+.card img {
+	height: 200px;
+	object-fit: cover;
+}
+footer {
+	margin-top: 2rem;
+	background-color: #343a40;
+	color: #fff;
+	padding: 1rem 0;
+}
+footer a {
+	color: #fff;
+	text-decoration: underline;
+}
+footer a:hover {
+	text-decoration: none;
+}
+@media (max-width: 768px) {
+	.card {
+		margin-bottom: 1rem;
+	}
+}
