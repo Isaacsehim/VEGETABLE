@@ -21,7 +21,9 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="#section1">Entrées</a></li>
                     <li class="nav-item"><a class="nav-link" href="#section2">Plats</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#section3">Desserts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section3">Sides</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section4">Desserts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section5">Boissons</a></li>
                 </ul>
             </div>
         </div>
@@ -38,166 +40,728 @@
         <div class="container">
             <h2 class="mb-4">Entrées</h2>
             <div class="row">
+                <!-- Carte Salade Verte -->
                 <div class="col-md-4">
                     <div class="card">
                         <img src="assets/img/entree1.jpg" class="card-img-top" alt="Salade Verte">
                         <div class="card-body">
                             <h5 class="card-title">Salade Verte</h5>
                             <p class="badge bg-success">€5.00</p>
-                            <a href="#order" class="btn btn-primary">Commander</a>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSalade">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
+    
+                <!-- Carte Velouté de Carottes -->
                 <div class="col-md-4">
                     <div class="card">
                         <img src="assets/img/entree2.jpg" class="card-img-top" alt="Velouté de Carottes">
                         <div class="card-body">
                             <h5 class="card-title">Velouté de Carottes</h5>
                             <p class="badge bg-success">€6.50</p>
-                            <a href="#order" class="btn btn-primary">Commander</a>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVeloute">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
+    
+                <!-- Carte Bruschetta -->
                 <div class="col-md-4">
                     <div class="card">
                         <img src="assets/img/entree3.jpg" class="card-img-top" alt="Bruschetta">
                         <div class="card-body">
                             <h5 class="card-title">Bruschetta</h5>
                             <p class="badge bg-success">€7.00</p>
-                            <a href="#order" class="btn btn-primary">Commander</a>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBruschetta">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    
+        <!-- Modals -->
+        <!-- Modal pour Salade Verte -->
+        <div class="modal fade" id="modalSalade" tabindex="-1" aria-labelledby="modalSaladeLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalSaladeLabel">Salade Verte</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Une délicieuse salade verte fraîche et croustillante.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal pour Velouté de Carottes -->
+        <div class="modal fade" id="modalVeloute" tabindex="-1" aria-labelledby="modalVelouteLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalVelouteLabel">Velouté de Carottes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Un velouté doux et savoureux à base de carottes fraîches.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal pour Bruschetta -->
+        <div class="modal fade" id="modalBruschetta" tabindex="-1" aria-labelledby="modalBruschettaLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalBruschettaLabel">Bruschetta</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Une Bruschetta traditionnelle avec des tomates fraîches et du basilic.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    
 
+
+    
     <!-- Section Plats -->
-    <section id="section1" class="py-5">
+    <section id="section2" class="py-5">
         <div class="container">
             <h2 class="mb-4">Plats</h2>
             <div class="row">
+                <!-- Carte Burger Vegan -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="assets/img/entree1.jpg" class="card-img-top" alt="Salade Verte">
+                        <img src="assets/img/entree1.jpg" class="card-img-top" alt="Burger Vegan">
                         <div class="card-body">
-                            <h5 class="card-title">Salade Verte</h5>
+                            <h5 class="card-title">Burger Vegan</h5>
                             <p class="badge bg-success">€5.00</p>
-                            <a href="#order" class="btn btn-primary">Commander</a>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBurger">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
+    
+                <!-- Carte Tacos au Chou-fleur -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="assets/img/entree2.jpg" class="card-img-top" alt="Velouté de Carottes">
+                        <img src="assets/img/entree2.jpg" class="card-img-top" alt="Tacos au Chou-fleur">
                         <div class="card-body">
-                            <h5 class="card-title">Velouté de Carottes</h5>
+                            <h5 class="card-title">Tacos au Chou-fleur</h5>
                             <p class="badge bg-success">€6.50</p>
-                            <a href="#order" class="btn btn-primary">Commander</a>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTacos">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
+    
+                <!-- Carte Pizza de légumes grillés -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="assets/img/entree3.jpg" class="card-img-top" alt="Bruschetta">
+                        <img src="assets/img/entree3.jpg" class="card-img-top" alt="Pizza de légumes grillés">
                         <div class="card-body">
-                            <h5 class="card-title">Bruschetta</h5>
+                            <h5 class="card-title">Pizza de légumes grillés</h5>
                             <p class="badge bg-success">€7.00</p>
-                            <a href="#order" class="btn btn-primary">Commander</a>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPizza">
+                                Commander
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Carte Salade de Quinoa Thaï -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/entree1.jpg" class="card-img-top" alt="Salade de Quinoa Thaï">
+                        <div class="card-body">
+                            <h5 class="card-title">Salade de Quinoa Thaï</h5>
+                            <p class="badge bg-success">€5.00</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalQuinoa">
+                                Commander
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Carte Chili Sin Carne -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/entree2.jpg" class="card-img-top" alt="Chili Sin Carne">
+                        <div class="card-body">
+                            <h5 class="card-title">Chili Sin Carne</h5>
+                            <p class="badge bg-success">€6.50</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalChili">
+                                Commander
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Carte Samossas de Patate Douce -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/entree3.jpg" class="card-img-top" alt="Samossas de Patate Douce et Sauce Curry">
+                        <div class="card-body">
+                            <h5 class="card-title">Samossas de Patate Douce et Sauce Curry</h5>
+                            <p class="badge bg-success">€7.00</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSamossas">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    
+        <!-- Modals -->
+        <!-- Modal Burger Vegan -->
+        <div class="modal fade" id="modalBurger" tabindex="-1" aria-labelledby="modalBurgerLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalBurgerLabel">Burger Vegan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Un burger savoureux avec des ingrédients 100% végétaux.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal Tacos au Chou-fleur -->
+        <div class="modal fade" id="modalTacos" tabindex="-1" aria-labelledby="modalTacosLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTacosLabel">Tacos au Chou-fleur</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Des tacos croustillants garnis de chou-fleur épicé et savoureux.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal Pizza de légumes grillés -->
+        <div class="modal fade" id="modalPizza" tabindex="-1" aria-labelledby="modalPizzaLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPizzaLabel">Pizza de légumes grillés</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Une pizza garnie de légumes grillés pour un goût authentique.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal Salade de Quinoa Thaï -->
+        <div class="modal fade" id="modalQuinoa" tabindex="-1" aria-labelledby="modalQuinoaLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalQuinoaLabel">Salade de Quinoa Thaï</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Une salade de quinoa aux saveurs fraîches et exotiques de Thaïlande.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal Chili Sin Carne -->
+        <div class="modal fade" id="modalChili" tabindex="-1" aria-labelledby="modalChiliLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalChiliLabel">Chili Sin Carne</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Un chili végétarien épicé et riche en saveurs.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal Samossas -->
+        <div class="modal fade" id="modalSamossas" tabindex="-1" aria-labelledby="modalSamossasLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalSamossasLabel">Samossas de Patate Douce</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Des samossas croustillants à la patate douce accompagnés d'une sauce au curry.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    
 
-    <!-- Section Desserts -->
-    <section id="section1" class="py-5">
+    <!-- Section Sides -->
+    <section id="section3" class="py-5">
         <div class="container">
-            <h2 class="mb-4">Desserts</h2>
+            <h2 class="mb-4">Sides</h2>
             <div class="row">
+                <!-- Carte Frites de Patates douces -->
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="assets/img/entree1.jpg" class="card-img-top" alt="Salade Verte">
+                        <img src="assets/img/entree1.jpg" class="card-img-top" alt="Frites de Patates douces">
                         <div class="card-body">
-                            <h5 class="card-title">Salade Verte</h5>
-                            <p class="badge bg-success">€5.00</p>
-                            <a href="#order" class="btn btn-primary">Commander</a>
+                            <h5 class="card-title">Frites de Patates douces</h5>
+                            <p class="badge bg-success">€3.50</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFrites">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
+    
+                <!-- Carte Coleslaw -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/entree2.jpg" class="card-img-top" alt="Coleslaw">
+                        <div class="card-body">
+                            <h5 class="card-title">Coleslaw</h5>
+                            <p class="badge bg-success">€3.50</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalColeslaw">
+                                Commander
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Carte Chips de légumes -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/entree3.jpg" class="card-img-top" alt="Chips de légumes">
+                        <div class="card-body">
+                            <h5 class="card-title">Chips de légumes</h5>
+                            <p class="badge bg-success">€2.50</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalChips">
+                                Commander
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modals -->
+        <!-- Modal Frites de Patates douces -->
+        <div class="modal fade" id="modalFrites" tabindex="-1" aria-labelledby="modalFritesLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalFritesLabel">Frites de Patates douces</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Des frites croustillantes et sucrées, parfaites en accompagnement.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal Coleslaw -->
+        <div class="modal fade" id="modalColeslaw" tabindex="-1" aria-labelledby="modalColeslawLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalColeslawLabel">Coleslaw</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Une salade de chou et carottes, fraîche et légèrement sucrée.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal Chips de légumes -->
+        <div class="modal fade" id="modalChips" tabindex="-1" aria-labelledby="modalChipsLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalChipsLabel">Chips de légumes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Un mélange croquant de légumes racines transformés en chips.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Section Desserts -->
+    <section id="section4" class="py-5">
+        <div class="container">
+            <h2 class="mb-4">Desserts</h2>
+            <div class="row">
+                <!-- Carte Gauffres Vegan -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/entree1.jpg" class="card-img-top" alt="Gauffres Vegan">
+                        <div class="card-body">
+                            <h5 class="card-title">Gauffres Vegan</h5>
+                            <p class="badge bg-success">€4.00</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalGauffres">
+                                Commander
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Carte Mousse au chocolat Vegan -->
                 <div class="col-md-4">
                     <div class="card">
                         <img src="assets/img/entree2.jpg" class="card-img-top" alt="Mousse au chocolat Vegan">
                         <div class="card-body">
                             <h5 class="card-title">Mousse au chocolat Vegan</h5>
-                            <p class="badge bg-success">€6.50</p>
-                            <a href="#order" class="btn btn-primary">Commander</a>
+                            <p class="badge bg-success">€3.00</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMousse">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
+    
+                <!-- Carte Tiramisu Vegan -->
                 <div class="col-md-4">
                     <div class="card">
                         <img src="assets/img/entree3.jpg" class="card-img-top" alt="Tiramisu Vegan">
                         <div class="card-body">
                             <h5 class="card-title">Tiramisu Vegan</h5>
-                            <p class="badge bg-success">€7.00</p>
-                            <a href="#order" class="btn btn-primary">Commander</a>
+                            <p class="badge bg-success">€3.50</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTiramisu">
+                                Commander
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    
+        <!-- Modals -->
+        <!-- Modal Gauffres Vegan -->
+        <div class="modal fade" id="modalGauffres" tabindex="-1" aria-labelledby="modalGauffresLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalGauffresLabel">Gauffres Vegan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Des gauffres moelleuses et légères, parfaites pour finir votre repas en douceur.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal Mousse au chocolat Vegan -->
+        <div class="modal fade" id="modalMousse" tabindex="-1" aria-labelledby="modalMousseLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalMousseLabel">Mousse au chocolat Vegan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Une mousse onctueuse à base de chocolat noir et d'ingrédients 100% végétaux.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal Tiramisu Vegan -->
+        <div class="modal fade" id="modalTiramisu" tabindex="-1" aria-labelledby="modalTiramisuLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTiramisuLabel">Tiramisu Vegan</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Une version vegan de ce dessert italien classique, avec des saveurs riches et équilibrées.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    
 
-    <!-- Section Boissons -->
-    <section id="section1" class="py-5">
+    <section id="boissons" class="py-5">
         <div class="container">
             <h2 class="mb-4">Boissons</h2>
             <div class="row">
+                <!-- Carte Thé Glacé Maison -->
                 <div class="col-md-4">
                     <div class="card">
+                        <!-- Image de la boisson -->
                         <img src="assets/img/entree1.jpg" class="card-img-top" alt="Thé Glacé Maison">
-                        <div class="card-body">
+                        <div class="card-body text-center">
+                            <!-- Nom de la boisson -->
                             <h5 class="card-title">Thé Glacé Maison</h5>
+                            <!-- Badge Prix -->
                             <p class="badge bg-success">€2.50</p>
-                            <a href="#order" class="btn btn-primary">Commander</a>
+                            <!-- Boutons -->
+                            <div class="d-flex justify-content-between mt-3">
+                                <!-- Bouton + Infos -->
+                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalTheGlace">
+                                    + Infos
+                                </button>
+                                <!-- Bouton Commander -->
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commandeModal">
+                                    Commander
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
+    
+                <!-- Carte Limonade Maison -->
                 <div class="col-md-4">
                     <div class="card">
+                        <!-- Image de la boisson -->
                         <img src="assets/img/entree2.jpg" class="card-img-top" alt="Limonade Maison">
-                        <div class="card-body">
+                        <div class="card-body text-center">
+                            <!-- Nom de la boisson -->
                             <h5 class="card-title">Limonade Maison</h5>
+                            <!-- Badge Prix -->
                             <p class="badge bg-success">€3.00</p>
-                            <a href="#order" class="btn btn-primary">Commander</a>
+                            <!-- Boutons -->
+                            <div class="d-flex justify-content-between mt-3">
+                                <!-- Bouton + Infos -->
+                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalLimonade">
+                                    + Infos
+                                </button>
+                                <!-- Bouton Commander -->
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commandeModal">
+                                    Commander
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
+    
+                <!-- Carte Maté -->
                 <div class="col-md-4">
                     <div class="card">
+                        <!-- Image de la boisson -->
                         <img src="assets/img/entree3.jpg" class="card-img-top" alt="Maté">
-                        <div class="card-body">
+                        <div class="card-body text-center">
+                            <!-- Nom de la boisson -->
                             <h5 class="card-title">Maté</h5>
+                            <!-- Badge Prix -->
                             <p class="badge bg-success">€3.50</p>
-                            <a href="#order" class="btn btn-primary">Commander</a>
+                            <!-- Boutons -->
+                            <div class="d-flex justify-content-between mt-3">
+                                <!-- Bouton + Infos -->
+                                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalMate">
+                                    + Infos
+                                </button>
+                                <!-- Bouton Commander -->
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commandeModal">
+                                    Commander
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    
+        <!-- Modals Individuels (Infos) -->
+        <!-- Modal Thé Glacé Maison -->
+        <div class="modal fade" id="modalTheGlace" tabindex="-1" aria-labelledby="modalTheGlaceLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTheGlaceLabel">Thé Glacé Maison</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Une boisson rafraîchissante, préparée avec soin à partir de thé noir infusé et légèrement sucré.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal Limonade Maison -->
+        <div class="modal fade" id="modalLimonade" tabindex="-1" aria-labelledby="modalLimonadeLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLimonadeLabel">Limonade Maison</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Une limonade maison pétillante et acidulée, faite avec des citrons frais.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal Maté -->
+        <div class="modal fade" id="modalMate" tabindex="-1" aria-labelledby="modalMateLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalMateLabel">Maté</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Une infusion énergisante à base de feuilles de yerba maté, idéale pour un boost naturel.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal Global (Commande) -->
+        <div class="modal fade" id="commandeModal" tabindex="-1" aria-labelledby="commandeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="commandeModalLabel">Confirmation de Commande</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Votre boisson a été ajoutée au panier avec succès !
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
-            <p>Adresse : 123 Rue du lapin, Le Havre</p>
-            <p>Téléphone : +33 2 13 14 15 16</p>
-            <p>Horaires : Lundi-Vendredi 9h-18h, Samedi 10h-20h</p>
-            <p><a href="#" class="text-white">Mentions légales</a></p>
+            <!-- Informations et carte en flexbox -->
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <p>Adresse : 8 Rue Jean de la Fontaine, Le Havre</p>
+                    <p>Téléphone : +33 2 13 14 15 16</p>
+                    <p>Horaires : Lundi-Vendredi 9h-18h, Samedi 10h-20h</p>
+                    <p><a href="#" class="text-white">Mentions légales</a></p>
+                </div>
+        
+                <!-- Section Google Maps à droite -->
+                <div class="col-md-6">
+                    <h5 class="text-white mb-3">Nous trouver :</h5>
+                    <div class="ratio ratio-16x9">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.3372200196277!2d0.10967471567474691!3d49.49389747935138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02dc819ea1d69%3A0xa0e0fba2d4a84aa5!2s8%20Rue%20Jean%20de%20la%20Fontaine%2C%2076600%20Le%20Havre%2C%20France!5e0!3m2!1sen!2sfr!4v1694567891012!5m2!1sen!2sfr" 
+                            class="rounded-map" 
+                            style="border-radius: 5%; width: 100%; height: 80%;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    
+     
+    
 
     <!-- Bootstrap Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
